@@ -11,6 +11,9 @@
 - Install Node packages - `npm install`
 - Run Game - `npm run start`
 
+## Preview:
+![alt text](https://github.com/hassanajazch/everreal-challenge/blob/master/public/demo.png)
+
 
 #### Code Style
 - Perfectly follow Single Responsibility rule
