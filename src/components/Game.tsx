@@ -56,18 +56,22 @@ export default class Game extends React.Component <MyProps, MyState> {
    * @param numberOfColors
    */
   generateSquares(colors: string[], squaresPerRow: number, numberOfColors: number) {
-    const squares: any = []
-    for(let i = 0; i < squaresPerRow; i++) {
-      squares[i] = [];
-      for(let j = 0; j < squaresPerRow; j++) {
-        squares[i][j] = {
-          color: this.getColor(colors, numberOfColors),
-          visited: false
+    try {
+      const squares: any = []
+      for(let i = 0; i < squaresPerRow; i++) {
+        squares[i] = [];
+        for(let j = 0; j < squaresPerRow; j++) {
+          squares[i][j] = {
+            color: this.getColor(colors, numberOfColors),
+            visited: false
+          }
         }
       }
-    }
 
-    return squares;
+      return squares;
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   getColor(colors: string[], numberOfColors: number): string {

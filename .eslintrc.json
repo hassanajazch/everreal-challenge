@@ -16,9 +16,6 @@
     "rules": {
         "no-var": 2,
         "max-len": [2, { "code": 300 }],
-        "no-unused-vars": 2,
-        "no-useless-return": 2,
-        "no-console": 0,
-        "indent": ["error", 4]
+        "no-unused-vars": 2
     }
 }
