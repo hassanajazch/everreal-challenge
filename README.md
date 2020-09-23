@@ -1,4 +1,3 @@
-# EverReal Assignment
 
 ## Development:
 
